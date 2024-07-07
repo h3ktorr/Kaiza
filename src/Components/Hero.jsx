@@ -14,7 +14,7 @@ const Hero = () => {
         </button>
       </div>
       <div className="small-screen absolute">
-        <div className="text-4xl mt-16 pl-2  text-white">
+        <div className="text-4xl mt-16 pl-1  text-white">
           <h3 className="tracking-widerdest">
             <span className="text-black">S</span>HOP
           </h3>
