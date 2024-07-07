@@ -8,7 +8,6 @@ const RootLayout = () => {
   return (
     <div className="font-body flex flex-col">
       <Navbar />
-      <BreadCrum />
       <Outlet />
       <Footer />
     </div>

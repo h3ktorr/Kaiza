@@ -7,7 +7,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="sm:flex w-11/12 self-center mt-8 bg-footerbg text-white items-center justify-center sm:h-80 h-96 pl-5">
+    <div className="sm:flex w-11/12 self-center mt-8 bg-footerbg text-white items-center justify-center sm:h-80 h-96 pl-5 sm:pl-0">
       <div className="px-6 sm:px-16 py-4 sm:py-0">
         <h1 className="text-lg">Be the first to know!</h1>
         <div className="flex my-4 ">
