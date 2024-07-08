@@ -8,9 +8,16 @@
  display: none;
 }
 
+.small-screen-grid {
+  display: none;
+}
+
 @media screen and (max-width: 640px) {
  .small-screen {
    display: block;
+  }
+  .small-screen-grid{
+    display: grid;
   }
  .big-screen {
    display: none;

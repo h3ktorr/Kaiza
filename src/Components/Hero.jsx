@@ -29,7 +29,7 @@ const Hero = () => {
           Shop the best of women’s <br /> shoes
         </p>
       </div>
-      <img src={heroImg} alt="" className="w-11/12 h-96 ml-auto sm:ml-0 sm:w-1/2" />
+      <img src={heroImg} alt="" className="w-11/12 h-96 sm:h-auto ml-auto sm:ml-0 sm:w-1/2" />
     </div>
   );
 };
