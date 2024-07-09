@@ -1,8 +1,8 @@
 import React from 'react';
-import ProductDisplay from '../Components/ProductDisplay';
 import { useParams } from 'react-router-dom';
 import { Stilettos, Flats, Sneakers } from "../Assets/data";
 import BreadCrum from '../Components/BreadCrum';
+import ProductDisplay from '../Components/ProductDisplay';
 import ProductDetails from '../Components/ProductDetails';
 import ProductReviews from '../Components/ProductReviews';
 import AlsoLike from '../Components/AlsoLike';

@@ -14,6 +14,7 @@ module.exports = {
         footerhero: "rgba(243, 204, 204, 1)",
         footerbg: "rgba(34, 33, 33, 1)",
         footerbtn: "rgba(243, 204, 204, 1)",
+        deliveryhead: "rgba(250, 233, 233, 1)",
       },
       height: {
         100: "33rem",
@@ -25,7 +26,7 @@ module.exports = {
         widerdest: "1rem",
       },
       margin: {
-        "quart": "5%",
+        quart: "5%",
       },
     },
   },

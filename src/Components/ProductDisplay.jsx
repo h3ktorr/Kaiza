@@ -1,6 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const ProductDisplay = (props) => {
   const { product } = props;
@@ -103,11 +104,13 @@ const ProductDisplay = (props) => {
             <div className="w-14 border border-itemsecondary rounded"></div>
             <button className="border  rounded-3xl w-8">+</button>
           </div>
-          <hr className="mt-8"/>
+          <hr className="mt-8" />
         </div>
-        <button className="uppercase mt-5 bg-footerhero py-2 px-5 rounded self-center text-xs tracking-widest">
-          Add to Cart
-        </button>
+        <Link to='/checkout'>
+          <button className="uppercase mt-5 bg-footerhero py-2 px-5 rounded self-center text-xs tracking-widest">
+            Add to Cart
+          </button>
+        </Link>
       </div>
     </div>
   );
