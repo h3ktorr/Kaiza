@@ -110,8 +110,8 @@ const PaymentInformation = () => {
         </div>
       )}
       {paymentState && (
-        <Link to="/ordercomplete">
-          <button className="self-center my-20 bg-footerhero rounded w-full sm:w-auto text-xs p-4 sm:p-2 sm:px-8">
+        <Link to="/ordercomplete" className="self-center">
+          <button className=" my-20 bg-footerhero rounded w-full sm:w-auto text-xs p-4 sm:p-2 sm:px-8">
             CONFIRM ORDER
           </button>
         </Link>
