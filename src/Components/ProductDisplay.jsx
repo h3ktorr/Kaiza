@@ -62,9 +62,11 @@ const ProductDisplay = (props) => {
           </div>
           <hr className="mt-5" />
         </div>
-        <button className="uppercase mt-5 bg-footerhero py-2 px-5 rounded self-center text-xs tracking-widest">
-          Add to Cart
-        </button>
+        <Link to="/checkout">
+          <button className="uppercase mt-5 bg-footerhero py-2 px-5 rounded self-center text-xs tracking-widest">
+            Add to Cart
+          </button>
+        </Link>
       </div>
       <div className="small-screen mt-16">
         <div className="">
@@ -106,7 +108,7 @@ const ProductDisplay = (props) => {
           </div>
           <hr className="mt-8" />
         </div>
-        <Link to='/checkout'>
+        <Link to="/checkout">
           <button className="uppercase mt-5 bg-footerhero py-2 px-5 rounded self-center text-xs tracking-widest">
             Add to Cart
           </button>
