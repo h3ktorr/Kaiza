@@ -12,7 +12,7 @@ const CompletionDetails = () => {
       </div>
       <div className="w-11/12 self-center flex flex-col items-center justify-center mt-10 text-xs sm:text-base">
         <p className="font-bold">We hope you enjoyed this as much as we did.</p>
-        <p className="text-itemsecondary mt-3">Click <a href="#" className="underline text-red-800">here</a>  to continue your shopping experience.</p>
+        <p className="text-itemsecondary mt-3">Click <a href="/" className="underline text-red-800">here</a>  to continue your shopping experience.</p>
       </div>
     </div>
   );

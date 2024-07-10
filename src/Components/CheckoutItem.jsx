@@ -30,7 +30,7 @@ const CheckoutItem = (props) => {
             <img src={product.image[0]} alt="" className="sm:w-1/2 w-full" />
             <div className="relative flex flex-col justify-center  w-1/2 text-start pl-5 sm:pl-10">
               <IoIosClose className="absolute top-3 right-3 text-2xl text-red-700 big-screen" />
-              <h1 className="text-xl">Tom Ford</h1>
+              <h1 className="text-xl">{product.name}</h1>
               <p className="text-xs mt-3">
                 Black <span>| Size 42 |</span> Qty 1
               </p>
