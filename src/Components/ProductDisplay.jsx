@@ -80,7 +80,7 @@ const ProductDisplay = (props) => {
         <div>
           <div className="flex justify-between">
             <h3 className="text-2xl">{product.name}</h3>
-            <p>N{product.price}</p>
+            <p>N{product.available_quantity}</p>
           </div>
           <p className="text-itemsecondary text-xs mt-1">
             Padlock 105mm metallic black sandals heel
