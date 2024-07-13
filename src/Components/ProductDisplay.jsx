@@ -21,22 +21,22 @@ const ProductDisplay = (props) => {
         {product.photos && (
           <div className="flex flex-col gap-2 big-screen">
             <img
-              src={`/api/images/${product.photos[2].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+              src={`https://api.timbu.cloud/images/${product.photos[2].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
               alt=""
               className="w-28"
             />
             <img
-              src={`/api/images/${product.photos[0].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+              src={`https://api.timbu.cloud/images/${product.photos[0].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
               alt=""
               className="w-28"
             />
             <img
-              src={`/api/images/${product.photos[3].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+              src={`https://api.timbu.cloud/images/${product.photos[3].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
               alt=""
               className="w-28"
             />
             <img
-              src={`/api/images/${product.photos[4].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+              src={`https://api.timbu.cloud/images/${product.photos[4].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
               alt=""
               className="w-28"
             />
@@ -44,7 +44,7 @@ const ProductDisplay = (props) => {
         )}
         {product.photos && (
           <img
-            src={`/api/images/${product.photos[1].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+            src={`https://api.timbu.cloud/images/${product.photos[1].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
             alt=""
             className=" w-full sm:w-100"
           />
@@ -53,22 +53,22 @@ const ProductDisplay = (props) => {
           {product.photos && (
             <div className="flex gap-2 overflow-scroll">
               <img
-                src={`/api/images/${product.photos[2].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+                src={`https://api.timbu.cloud/images/${product.photos[2].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
                 alt=""
                 className="w-28"
               />
               <img
-                src={`/api/images/${product.photos[0].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+                src={`https://api.timbu.cloud/images/${product.photos[0].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
                 alt=""
                 className="w-28"
               />
               <img
-                src={`/api/images/${product.photos[3].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+                src={`https://api.timbu.cloud/images/${product.photos[3].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
                 alt=""
                 className="w-28"
               />
               <img
-                src={`/api/images/${product.photos[4].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+                src={`https://api.timbu.cloud/images/${product.photos[4].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
                 alt=""
                 className="w-28"
               />
