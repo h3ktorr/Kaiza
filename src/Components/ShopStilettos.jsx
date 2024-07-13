@@ -1,29 +1,35 @@
-import React from "react";
-import { Stilettos } from "../Assets/data";
+import React, { useContext } from "react";
 import SingleItem from "./SingleItem";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../Context/ShopContext";
 
 const ShopStilettos = () => {
-  let stiletto = Stilettos.slice(0, 4);
+  const { data } = useContext(ShopContext);
+  const filteredItems = data.filter(item =>
+    item.categories.some(category => category.name === "stilettos")
+);
+  let stiletto = filteredItems.slice(0, 4);
 
   return (
     <div className="w-11/12 self-center mt-8 flex flex-col">
       <h1 className="p-4 text-xl tracking-widest">Stilettos</h1>
       <div className="flex justify-between overflow-scroll gap-4">
         {stiletto.map((product) => {
+          const imageurl = product.photos[1].url;
+
           return (
             <SingleItem
-              key={product.id}
-              id={product.id}
+              key={product.unique_id}
+              id={product.unique_id}
               name={product.name}
-              image={product.image}
-              price={product.price}
-              description={product.description}
+              price={product.available_quantity}
+              imageurl={imageurl}
+              description="Stilettos"
             />
           );
         })}
       </div>
-      <Link to='stilettos'>
+      <Link to="stilettos">
         <p className="self-end mt-2 text-itembtn tracking-wider">view all</p>
       </Link>
 

@@ -7,7 +7,6 @@ import { ShopContext } from '../Context/ShopContext';
 const Checkout = () => {
  const allProducts = [...Stilettos, ...Flats, ...Sneakers];
  const { productState } = useContext(ShopContext);
- const product = allProducts.find((item) => item.id === 2);
 
   return (
     <div className="flex flex-col">

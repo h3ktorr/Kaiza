@@ -1,10 +1,13 @@
-import React from 'react';
-import { Stilettos } from "../Assets/data";
+import React, { useContext, useEffect, useState } from "react";
 import SingleItem from "./SingleItem";
-import { IoIosArrowDown } from 'react-icons/io';
-
+import { IoIosArrowDown } from "react-icons/io";
+import { ShopContext } from "../Context/ShopContext";
 
 const ShopAllStilettos = () => {
+  const { data } = useContext(ShopContext);
+  const stilettos = data.filter((item) =>
+    item.categories.some((category) => category.name === "stilettos")
+  );
   return (
     <div className="w-11/12 self-center mt-16 flex flex-col">
       <div className="flex px-8 sm:px-4 gap-4 sm:gap-32 text-sm justify-between sm:justify-normal">
@@ -17,15 +20,17 @@ const ShopAllStilettos = () => {
         <p className="ml-auto big-screen">0 results</p>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 mt-8">
-        {Stilettos.map((product) => {
+        {stilettos.map((product) => {
+          const imageurl = product.photos[1].url;
+
           return (
             <SingleItem
-              key={product.id}
-              id={product.id}
+              key={product.unique_id}
+              id={product.unique_id}
               name={product.name}
-              image={product.image}
-              price={product.price}
-              description={product.description}
+              price={product.available_quantity}
+              imageurl={imageurl}
+              description='Stilettos'
             />
           );
         })}
@@ -35,6 +40,6 @@ const ShopAllStilettos = () => {
       </button>
     </div>
   );
-}
+};
 
-export default ShopAllStilettos
+export default ShopAllStilettos;

@@ -10,6 +10,7 @@ import MidFooterHero from '../Components/MidFooterHero';
 import BreadCrum from '../Components/BreadCrum';
 
 const Shop = () => {
+  
   return (
     <div className="flex flex-col ">
       <BreadCrum ok={false} />

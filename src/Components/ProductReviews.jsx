@@ -49,9 +49,9 @@ const ProductReviews = (props) => {
           The shoes are beautiful and exactly how i saw it.
         </p>
         <div className="flex mt-3 gap-8">
-          <img src={product.image[0]} alt="" className="w-28" />
+          {/* <img src={product.image[0]} alt="" className="w-28" />
           <img src={product.image[1]} alt="" className="w-28" />
-          <img src={product.image[2]} alt="" className="w-28" />
+          <img src={product.image[2]} alt="" className="w-28" /> */}
         </div>
         <p className="mt-8 text-xs">Yes, I recommend this product</p>
         <p className="mt-4 text-xs leading-6 text-itemsecondary">

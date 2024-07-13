@@ -28,7 +28,7 @@ const Footer = () => {
           <FaFacebook className="bg-footerbtn text-black size-5 p-1 rounded-lg" />
         </div>
       </div>
-      <ul className="grid grid-cols-2 sm:grid-cols-4  w-full items-center justify-center text-xs list-disc gap-4 sm:gap-8 pl-8 sm:pl-0 mx-auto">
+      <ul className="grid grid-cols-2 sm:grid-cols-4  w-full items-center justify-center text-xs list-disc gap-4 sm:gap-8 pl-8 sm:pl-0 mx-auto pr-8">
         <li>Shop</li>
         <li>About us</li>
         <li>Custom Orders</li>

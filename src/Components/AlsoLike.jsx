@@ -1,6 +1,7 @@
 import React from 'react';
 import { Stilettos, Flats, Sneakers } from '../Assets/data'
 import SingleItem from './SingleItem';
+import { Link } from 'react-router-dom';
 
 const AlsoLike = () => {
   const allProducts = [...Stilettos, ...Flats, ...Sneakers];
@@ -28,7 +29,7 @@ const AlsoLike = () => {
         })}
       </div>
       
-      <button className='uppercase text-xs border p-1 rounded text-itemsecondary mt-4'>Load more</button>
+      <button className='uppercase text-xs border p-1 rounded text-itemsecondary mt-4 hover:bg-black hover:text-white'> <Link to='/'>Load more</Link> </button>
     </div>
   );
 }

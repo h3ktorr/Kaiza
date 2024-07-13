@@ -1,24 +1,30 @@
-import React from "react";
-import { Flats } from "../Assets/data";
+import React, { useContext } from "react";
 import SingleItem from "./SingleItem";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../Context/ShopContext";
 
 const ShopFlats = () => {
-  let flat = Flats.slice(0, 4);
+  const { data } = useContext(ShopContext);
+  const filteredItems = data.filter((item) =>
+    item.categories.some((category) => category.name === "flats")
+  );
+  let flat = filteredItems.slice(0, 4);
 
   return (
     <div className="w-11/12 self-center mt-8 flex flex-col">
       <h1 className="p-4 text-xl tracking-widest">Flats</h1>
       <div className="flex justify-between overflow-scroll gap-4">
         {flat.map((product) => {
+          const imageurl = product.photos[1].url;
+
           return (
             <SingleItem
-              key={product.id}
-              id={product.id}
+              key={product.unique_id}
+              id={product.unique_id}
               name={product.name}
-              image={product.image}
-              price={product.price}
-              description={product.description}
+              price={product.available_quantity}
+              imageurl={imageurl}
+              description="Flats"
             />
           );
         })}

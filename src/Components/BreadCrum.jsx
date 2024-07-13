@@ -1,10 +1,14 @@
 import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const BreadCrum = (props) => {
   return (
     <div className="my-4 w-11/12 self-center p-4 flex items-center">
-      <p>Shop</p>
+      <p>
+        {" "}
+        <Link to="/">Shop</Link>
+      </p>
       {props.ok && (
         <div className="flex items-center">
           <FaAngleRight />
@@ -14,7 +18,11 @@ const BreadCrum = (props) => {
       {props.productOk && (
         <div className="flex items-center">
           <FaAngleRight />
-          <p>{props.productCategory}</p>
+          <p className="capitalize">
+            <Link to={`/${props.productCategory}`}>
+              {props.productCategory}
+            </Link>
+          </p>
           <FaAngleRight />
           <p>{props.productName}</p>
         </div>
