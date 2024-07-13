@@ -41,7 +41,7 @@ const CheckoutItem = (props) => {
       <div className="sm:flex bg-gray-100">
         <div className="sm:w-1/2 sm:border-r border-itemsecondary">
           <div className="sm:border-b p-2 pb-8 border-itemsecondary">
-            {data && data.map((e) => {
+            {data.map((e) => {
               if (cartItems[e.unique_id] > 0) {
                 return (
                   <div key={e.unique_id} className="flex mb-2 text-sm gap-1">
