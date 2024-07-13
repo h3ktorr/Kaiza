@@ -16,7 +16,7 @@ const SingleItem = (props) => {
         <div className="text-xs tracking-wider">
           <p className="my-1">{props.name}</p>
           <p className="text-itemsecondary ">{props.description}</p>
-          <p className="my-1">N{props.available_quantity}</p>
+          <p className="my-1">N{props.price}</p>
         </div>
         <CiHeart className="text-3xl" />
       </div>
