@@ -47,7 +47,7 @@ const CheckoutItem = (props) => {
                   <div key={e.unique_id} className="flex mb-2 text-sm gap-1">
                     <div className="w-24">
                       <img
-                        src={`/api/images/${e.photos[2].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
+                        src={`https://api.timbu.cloud/images/${e.photos[2].url}?organization_id=dc5223dc05244b6885be89f9a28790b3&Appid=R8Y1FRV0K6OATNM&Apikey=8b9e0c9e1737410b9894b1f90594690720240712145150788065`}
                         alt=""
                       />
                     </div>
