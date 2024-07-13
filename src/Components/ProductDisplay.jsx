@@ -155,7 +155,7 @@ const ProductDisplay = (props) => {
       </div>
       <div className="small-screen mt-16">
         <div className="">
-          <h3 className="text-lg">N{product.price}</h3>
+          <h3 className="text-lg">N{product.available_quantity}</h3>
           <p className="text-sm">{product.category}</p>
           <div className="flex items-center gap-4">
             <div className="flex gap-2 mt-2 items-center">
